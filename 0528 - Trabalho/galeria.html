@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-dark">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="header">
+            <div class="container">
+                <a class="navbar-brand" href="home.html">
+                    <i class="bi bi-shield-shaded me-2"></i>
+                    Pantera Negra
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html"><i class="bi bi-house-door me-1"></i> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sinopse.html"><i class="bi bi-book me-1"></i> Sinopse</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="elenco.html"><i class="bi bi-people me-1"></i> Elenco</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="personagens.html"><i class="bi bi-person-badge me-1"></i> Personagens</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="galeria.html"><i class="bi bi-images me-1"></i> Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="trilha-sonora.html"><i class="bi bi-music-note-beamed me-1"></i> Trilha Sonora</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-5">
+        <div class="pt-5"></div>
+        <div class="row g-4">
+            <!-- Imagem 1 -->
+            <div class="col-md-4 col-sm-6">
+                <img src="https://via.placeholder.com/400x225/4a148c/ffffff?text=T'Challa" 
+                     class="img-thumbnail" 
+                     data-bs-toggle="modal" 
+                     data-bs-target="#modalImagem1"
+                     alt="Pantera Negra">
+            </div>
+            
+            <!-- Imagem 2 -->
+            <div class="col-md-4 col-sm-6">
+                <img src="https://via.placeholder.com/400x225/000000/ffffff?text=Wakanda" 
+                     class="img-thumbnail" 
+                     data-bs-toggle="modal" 
+                     data-bs-target="#modalImagem2"
+                     alt="Wakanda">
+            </div>
+            
+            <!-- Imagem 3 -->
+            <div class="col-md-4 col-sm-6">
+                <img src="https://via.placeholder.com/400x225/9c27b0/ffffff?text=Killmonger" 
+                     class="img-thumbnail" 
+                     data-bs-toggle="modal" 
+                     data-bs-target="#modalImagem3"
+                     alt="Killmonger">
+            </div>
+            
+            <!-- Adicione mais imagens seguindo o mesmo padrão -->
+        </div>
+
+        <div class="modal fade" id="modalImagem1" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">T'Challa como Pantera Negra</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="https://via.placeholder.com/800x450/4a148c/ffffff?text=T'Challa" 
+                            class="img-fluid" 
+                            alt="Pantera Negra">
+                    </div>
+                    <div class="modal-footer">
+                        <p class="text-muted">Cena do filme "Pantera Negra" (2018).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 2 -->
+        <div class="modal fade" id="modalImagem2" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Wakanda</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="https://via.placeholder.com/800x450/000000/ffffff?text=Wakanda" 
+                            class="img-fluid" 
+                            alt="Wakanda">
+                    </div>
+                    <div class="modal-footer">
+                        <p class="text-muted">Reino de Wakanda, nação tecnologicamente avançada.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer py-2 mt-5" id="footer">
+        &copy; Criado por Marcelo Honda Kobayashi - 2025<br>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+body {
+    --roxo-card: rgb(158, 87, 224);
+    --roxo-btn: rgb(103, 11, 189);
+    --roxo-btn-hover: rgb(67, 9, 121);
+    --roxo-acordeao-ativo: rgb(46, 5, 65);
+}
+
+#header, #footer {
+    background-color: var(--roxo-card);
+}
+
+#card-padrao {
+    background-color: var(--roxo-card);
+}
+
+#btn-padrao {
+    color: white;
+    background-color: var(--roxo-btn);
+}
+#btn-padrao:hover {
+    background-color: var(--roxo-btn-hover);
+}
+
+.accordion {
+    --bs-accordion-btn-bg: var(--roxo-card);
+    --bs-accordion-active-bg: var(--roxo-acordeao-ativo);
+    --bs-accordion-active-color: white;
+    --bs-accordion-btn-focus-box-shadow: none;
+}
